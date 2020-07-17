@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ch.doudemo.widget.MyVideoPlayer
+        android:id="@+id/mp_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="TEST"
+        android:textColor="@color/colorRed"
+        android:background="@color/colorDark"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_share"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="分享"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"
+        />
+
+    <ImageButton
+        android:id="@+id/share"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/fenxiang"
+        android:background="@color/colorDark"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_share"/>
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="2.6w"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/share"
+        />
+
+    <ImageButton
+        android:id="@+id/comment"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/comment"
+        android:background="@color/colorDark"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_comment"/>
+
+    <TextView
+        android:id="@+id/tv_like"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="73.6w"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/comment"
+        />
+
+    <ImageButton
+        android:id="@+id/like"
+        android:tint="@color/colorWhite"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_like"
+        android:background="@color/colorDark"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_like"/>
+
+<!--    ###########################################-->
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="用户名"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_jieshao"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_jieshao"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingBottom="45dp"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+
+</android.support.constraint.ConstraintLayout>

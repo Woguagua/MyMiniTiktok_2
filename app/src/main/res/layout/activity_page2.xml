@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Page2Activity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_page2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<android.support.design.widget.BottomNavigationView-->
+        <!--android:id="@+id/navigation"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:background="@color/colorDark"-->
+        <!--app:itemTextColor="@color/colorWhite"-->
+        <!--app:menu="@menu/navigation"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent" />-->
+
+    <RelativeLayout
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text = "首页"
+            android:background="@color/colorDark"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/btn_record"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text = "录制"
+            android:background="@color/colorDark"
+            android:textColor="@color/colorWhite"
+            android:layout_toRightOf="@id/btn_home"/>
+
+        <Button
+            android:id="@+id/btn_mine"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text = "我的"
+            android:background="@color/colorDark"
+            android:textColor="@color/colorWhite"
+            android:layout_toRightOf="@id/btn_record"/>
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_share"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="1.3w"-->
+        <!--android:textSize="13sp"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintBottom_toTopOf="@id/navigation"-->
+        <!--/>-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/share"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/ic_like"-->
+        <!--android:background="@color/colorDark"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintBottom_toTopOf="@id/tv_share"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_comment"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="2.6w"-->
+        <!--android:textSize="13sp"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintBottom_toTopOf="@id/share"-->
+        <!--/>-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/comment"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/ic_like"-->
+        <!--android:background="@color/colorDark"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintBottom_toTopOf="@id/tv_comment"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_like"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="73.6w"-->
+        <!--android:textSize="13sp"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintBottom_toTopOf="@id/comment"-->
+        <!--/>-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/like"-->
+        <!--android:tint="@color/colorWhite"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/ic_like"-->
+        <!--android:background="@color/colorDark"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintBottom_toTopOf="@id/tv_like"/>-->
+
+</android.support.constraint.ConstraintLayout>
